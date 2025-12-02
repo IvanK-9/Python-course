@@ -9,3 +9,7 @@ print(f"Current: {guest}")
 
 print(f"Sorry {removed_guests[0]}, there is no room at the dinner table.")
 print(f"Sorry {removed_guests[1]}, there is no room at the dinner table.")
+
+
+print(len(guest))
+#print(len(removed_guests))
