@@ -1,0 +1,6 @@
+num = []
+for value in range(0,1000000):
+    num.append(value+1)
+print(min(num))
+print(max(num))
+print(sum(num))
