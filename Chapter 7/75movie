@@ -1,0 +1,24 @@
+# Basic solution
+print("\n=== Exercise 7-5: Movie Tickets ===")
+
+while True:
+    age_input = input("Enter your age (or 'quit' to exit): ").strip()
+    
+    if age_input.lower() == 'quit':
+        print("Thank you for visiting!")
+        break
+    
+    try:
+        age = int(age_input)
+        
+        if age < 0:
+            print("Please enter a valid age.")
+        elif age < 3:
+            print("Your ticket is free!")
+        elif age <= 12:
+            print("Your ticket costs $10.")
+        else:
+            print("Your ticket costs $15.")
+            
+    except ValueError:
+        print("Please enter a valid number.")
